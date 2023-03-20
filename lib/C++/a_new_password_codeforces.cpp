@@ -50,3 +50,20 @@ int main()
 
     return 0;
 }
+
+//-----------------------------------------
+
+// another solution
+
+
+#include <iostream>
+using namespace std;
+main()
+{
+    int n, k;
+    cin >> n >> k;
+    while (n--)
+    {
+        putchar('a' + n % k);
+    }
+}
