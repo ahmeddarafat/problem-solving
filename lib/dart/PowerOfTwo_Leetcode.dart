@@ -23,7 +23,7 @@ class Solution {
 
 /// Complexity Analysis
 /// Time Complexity: O(log n)
-/// Space Complexity: O(1)
+/// Space Complexity: O(log n)
 
 /// Another Solution
 /// with binary operation
