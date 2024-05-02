@@ -10,8 +10,8 @@ void main() {
 
 class Solution {
   bool isPowerOfTwo(int n) {
-    if (n == 0) return true;
-    if (n == 0) return true;
+    if (n == 0) return false;
+    if (n == 1) return true;
     var result = n / 2;
     if ((result - result.toInt()) > 0) {
       return false;
