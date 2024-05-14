@@ -46,3 +46,27 @@ class Solution2 {
     return false;
   }
 }
+
+// BFS (Queue)
+class Solution3 {
+  bool isSameTree(TreeNode? p, TreeNode? q) {
+    if (p == null && q == null) return true;
+    if (p == null || q == null) return false;
+    final queue = Queue<TreeNode?>();
+    queue.add(p);
+    queue.add(q);
+    while (queue.isNotEmpty) {
+      var p = queue.removeFirst();
+      var q = queue.removeFirst();
+      var val1 = p?.val;
+      var val2 = q?.val;
+      if (val1 != val2) return false;
+      queue.add(p?.left);
+      queue.add(q?.left);
+      queue.add(p?.right);
+      queue.add(q?.right);
+    }
+
+    return false;
+  }
+}
