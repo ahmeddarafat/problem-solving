@@ -9,6 +9,7 @@ import 'dart:collection';
 ///  4. a hash map to keep track of the graph.
 ///  5. a node class to represent a node in the priority queue.
 ///  6. an edge class to represent an edge in the graph.
+///  7. a list to keep track of the visited nodes.
 class Graph {
   final HashMap<String, List<Edge>> adjList = HashMap();
 
